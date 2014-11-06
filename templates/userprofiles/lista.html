@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<ul>
+    <form action="" method="post"></form>
+    <p>usuarios registrados</p>
+{% for usuario in usuarios %}
+    <li>{{usuario.username}}</li>
+{% endfor %}
+
+</ul>
+{% endblock %}
